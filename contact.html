@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href= "index.html" > Home</a>
+            <a class="cabecalho__menu__link" href="about.html" > Sobre Mim</a>
+            <a class="cabecalho__menu__link" href= "ability.html" > Habilidades</a>
+            <a class="cabecalho__menu__link" href="contact.html" > Contato</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <form class = "form" action ="https://formsubmit.co/nagermuts@gmail.com" method ="POST">
+                <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque">Entre em Contato</strong></h1>
+                <label for="nome"> Nome: </label>
+                <input type="text" name="name"id = "nome" placeholder="Preencha seu nome" required>
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id = "email" placeholder="seuemail@email.com" required>
+                <label for="textarea"> Mensagem: </label>
+                <textarea name = "message" id = "textarea" cols="30" rows = "10" placeholder="Sua mensagem..."> </textarea>
+
+                <input type="hidden" name="_next" value="https://yourdomain.co/email-enviado.html">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <img class="apresentacao__imagem" src="./Assets/IMG-8070.jpg" alt="Foto da NadjaGermuts">
+
+    </main>
+    <footer class="rodape">
+        <img src="./Assets/Logo_Alura_Include.svg" alt= "Logo Alura Include">
+        <img src="./Assets/logozurich2.png" alt= "Logo Zurich">
+        <p>Desenvolvida por NahGermuts</p>
+    
+    </footer>
+</body>
+</html>
